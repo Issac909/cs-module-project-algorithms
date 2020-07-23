@@ -8,6 +8,7 @@ def product_of_all_other_numbers(arr):
     # Can use enumerate to both loop through the array, but also increase the index(i)
     for i, x in enumerate(arr):
         result = 1
+        # Seperate all elements other than
         everything_else = arr[:i] + arr[i + 1:]
         
         for a in everything_else:

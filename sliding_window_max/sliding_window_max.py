@@ -7,17 +7,11 @@ def sliding_window_max(nums, k):
     end = k
     placeholder = []
 
-    for x in nums:
+    while 0 < len(nums) - (k - 1):
         window = nums[start:end]
         maxed = max(window)
         placeholder.append(maxed)
-        
-        if end < len(nums):
-            start += 1
-            end += 1
-            
-        else: 
-            pass
+        nums.pop(0)
         
     return placeholder
 
